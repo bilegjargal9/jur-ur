@@ -38,6 +38,8 @@ class Shop extends React.Component {
             <div className="cat-title-shop">
               <div className="casual-title category-sidebar-title-shop">Категори</div>
             </div>
+
+            
             {categories.map((category) => (
               <label key={category.id} className="cat-sidebar-item-shop custom-radio">
                 <input

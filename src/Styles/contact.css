@@ -205,6 +205,14 @@ margin-bottom: 50px;
     position: absolute;
 }
 
+.hrButton:hover {
+    background: #1B3363; 
+    opacity: 80%;
+    color: #FFFFFF; 
+    transform: scale(1.05); 
+    cursor: pointer;
+  }
+
 .banner-contact{
     width: 600px;
     height: 550px;

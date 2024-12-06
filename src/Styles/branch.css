@@ -49,12 +49,23 @@
     .branch-item-branch img{
         width: 400px;
         height: 400px;
+        object-fit: cover; 
     }
     .branch-item-branch p{
         margin:0 25px;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 600;
         color: #1B3363;
+    }
+    
+    .branch-item-branch:hover {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-10px);
+        background-color: #e0e0e0; 
+    }
+    
+    .branch-item-branch p:hover {
+      color: #007bff; 
     }
     .name-container{
         height: 45px;
@@ -67,6 +78,7 @@
         margin: 7.5px;
         font-size: 20px;
     }
+
 .leaflet-container{
     height: 100%;
     border-radius: 10px;
