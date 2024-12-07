@@ -18,6 +18,7 @@ import best3 from '../images/best3.png';
 import halloween from '../images/halloween.png';
 import hr1 from '../images/hr1.jpg';
 import hr2 from '../images/hr2.jpg';
+import Shop_cat from './Shop_cat';
 
 class Home extends React.Component {
   render() {
@@ -77,12 +78,7 @@ class Home extends React.Component {
         </div>
 
         <div className="bestseller-home">
-          {[item1, item2, item3, jimstei, item5, item6].map((item, idx) => (
-            <div className="item" key={idx}>
-              <img className="bestshop" src={item} alt={`Item ${idx + 1}`} />
-              <h2>Бүтээгдэхүүн {idx + 1}</h2>
-            </div>
-          ))}
+        <Shop_cat category={'new_products'}/>
         </div>
 
         <div className="banner2-home">
@@ -109,7 +105,7 @@ class Home extends React.Component {
 
         <div className="heads-home">
           <h1>Бидэнтэй нэгдэх</h1>
-          <h2>Нөхөрсөг хамт олон таныг хүлээж байна</h2>
+          <h2 className='spe'>Нөхөрсөг хамт олон таныг хүлээж байна</h2>
         </div>
 
         <div className="banner2-home">

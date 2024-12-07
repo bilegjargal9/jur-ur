@@ -97,6 +97,8 @@
   background-color: #1B3363;
   margin-top: 10px;
   border-radius: 20px;
+  font-weight: 700;
+
 }
 .heroshop-home button:hover{
   background-color: #FFFFFF;
@@ -157,7 +159,6 @@
   color: #000000;
   flex: none;
   margin-top: -20px;
-  margin-left: 40px;
 }
 .head1-home h1{
   height: 53px;
@@ -272,6 +273,8 @@
   left: 20px;
   top: 200px;
   border-radius: 20px;
+  font-weight: 700;
+
 }
 ._001A button:hover{
   background-color: white;
@@ -378,6 +381,8 @@
   cursor: pointer;
   transition: #6a4ee7 0.5s ease;
   border-radius: 20px;
+  font-weight: 700;
+
 }
 .info1 button:hover{
   background-color: white;
@@ -453,12 +458,16 @@
 }
 
 .bestseller-home{
+
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 Ð±Ð°Ð³Ð°Ð½Ð°Ñ‚Ð°Ð¹ */
   row-gap: 40px;
   column-gap: 150px;
   margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+
+
 }
 .itemA-home{
   display: flex;
@@ -583,6 +592,8 @@
   cursor: pointer;
   transition: #6a4ee7 0.5s ease;
   border-radius: 20px;
+  font-weight: 700;
+
 }
 .zurag1-home button:hover{
   background-color: white;
@@ -633,6 +644,8 @@
   cursor: pointer;
   transition: 0.5s ease;
   border-radius: 20px;
+  font-weight: 700;
+
 }
 .zurag4-home button:hover{
   background-color: white;
@@ -658,6 +671,7 @@
   width: 525px;
   height: 687px;
   border-radius: 20px;
+  object-fit:fill;
 }
 
 .zurag5-home button {
@@ -673,6 +687,8 @@
   cursor: pointer;
   transition: 0.5s ease;
   border-radius: 20px;
+  font-weight: 700;
+
 }
 .zurag5-home button:hover{
   background-color: white;
@@ -699,8 +715,23 @@
   cursor: pointer;
   transition: 0.5s ease;
   border-radius: 20px;
+  font-weight: 700;
+
 }
 .zurag6-home button:hover{
   background-color: white;
   color: black;
+}
+
+.spe{
+  width: 700px;
+  height: 72px;
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  color: #000000;
+  flex: none;
+  margin-top: -20px;
+  margin-left: -80px;
 }
