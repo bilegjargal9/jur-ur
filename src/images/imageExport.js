@@ -20,11 +20,10 @@ const images_s = {
     /*Бренд бялуу brand_cake*/
     product15: require("./15.png"),
     product16: require("./16.png"), 
-    product17: require("./16.png"), 
-    product18: require("./17.png"), 
-    product19: require("./18.png"), 
-    product20: require("./19.png"), 
-    product21: require("./20.png"),
+    product17: require("./17.png"), 
+    product18: require("./18.png"), 
+    product19: require("./19.png"), 
+    product20: require("./20.png"), 
 
     /*Талх нарийн боов bread*/
     product21: require("./21.png"),

@@ -2,11 +2,6 @@ import React from 'react';
 import '../Styles/home.css';
 import banner from '../images/banner.png';
 import hero from '../images/hero.jpg';
-import item1 from '../images/item1.jpg';
-import item2 from '../images/item2.png';
-import item3 from '../images/item3.png';
-import item5 from '../images/item5.jpg';
-import item6 from '../images/item6.jpg';
 import alag from '../images/alag.png';
 import jimstei from '../images/jimstei.png';
 import byluu from '../images/byluu.png';
@@ -19,19 +14,29 @@ import halloween from '../images/halloween.png';
 import hr1 from '../images/hr1.jpg';
 import hr2 from '../images/hr2.jpg';
 import Shop_cat from './Shop_cat';
+import { useNavigate } from 'react-router-dom';
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleNavigate = this.handleNavigate.bind(this);
+  }
+
+  handleNavigate(path) {
+    const { navigate } = this.props;
+    navigate(path);
+  }
+
   render() {
     return (
       <div className="home">
         <div className="banner-home">
           <img className="banner" src={banner} alt="Banner" />
           <div className="heroshop-home">
-
             <img src={hero} alt="Hero" />
             <h2>Шоколадтай жигнэмэг</h2>
             <p>Шоколад, Алмонд самартай жигнэмэг</p>
-            <button>Цааш үзэх</button>
+            <button onClick={() => this.handleNavigate('/item/36')}>Цааш үзэх</button>
           </div>
         </div>
 
@@ -47,14 +52,10 @@ class Home extends React.Component {
               <h3>Шинэ бүтээгдэхүүн</h3>
               <p>Бор жигнэмэг юм шиг байна</p>
             </div>
-            <button>Цааш үзэх</button>
+            <button onClick={() => this.handleNavigate('/item/35')}>Цааш үзэх</button>
           </div>
           <div className="_002A">
-            <img src={jimstei} alt="jimstei" />
-            <div className="info">
-              <h3>Шинэ бүтээгдэхүүн</h3>
-              <p>Бор жигнэмэг юм шиг байна</p>
-            </div>
+            <img src={jimstei} alt="Jimstei" />
           </div>
           <div className="_003A">
             <img src={byluu} alt="Byluu" />
@@ -65,9 +66,9 @@ class Home extends React.Component {
           <div className="_005A">
             <img src={cup} alt="Cup" />
             <div className="info1">
-              <h3>Шинэ бүтээгдэхүүн</h3>
-              <p>Бор жигнэмэг юм шиг байна</p>
-              <button>Цааш үзэх</button>
+              <h3>Төрөл бүрийн бүтээгдэхүүн</h3>
+              <p>Таны амтанд тохирно</p>
+              <button onClick={() => this.handleNavigate('/products')}>Цааш үзэх</button>
             </div>
           </div>
         </div>
@@ -78,14 +79,14 @@ class Home extends React.Component {
         </div>
 
         <div className="bestseller-home">
-        <Shop_cat category={'new_products'}/>
+          <Shop_cat category="new_products" />
         </div>
 
         <div className="banner2-home">
           <div className="zurag1-home">
             <img src={bagts} alt="Bagts" />
             <h3>Нимбэгтэй тарт + Нимбэгтэй пирог</h3>
-            <button>Цааш үзэх</button>
+            <button onClick={() => this.handleNavigate('item/26')}>Цааш үзэх</button>
           </div>
           <div className="zurag2-home">
             <img src={branch} alt="Branch" />
@@ -98,21 +99,21 @@ class Home extends React.Component {
           </div>
           <div className="zurag4-home">
             <img src={halloween} alt="Halloween" />
-            <h1>Halloween special...</h1>
-            <button>Цааш үзэх</button>
+            <h1>Halloween Special...</h1>
+            <button onClick={() => this.handleNavigate('/item/18')}>Цааш үзэх</button>
           </div>
         </div>
 
         <div className="heads-home">
           <h1>Бидэнтэй нэгдэх</h1>
-          <h2 className='spe'>Нөхөрсөг хамт олон таныг хүлээж байна</h2>
+          <h2 className="spe">Нөхөрсөг хамт олон таныг хүлээж байна</h2>
         </div>
 
         <div className="banner2-home">
           {[hr1, hr2].map((img, idx) => (
             <div className={`zurag${idx + 5}-home`} key={idx}>
               <img src={img} alt={`HR ${idx + 1}`} />
-              <button onClick={() => window.open("https://jurur.mn", "_blank", "noopener,noreferrer")}>
+              <button onClick={() => window.open('https://jurur.mn', '_blank', 'noopener,noreferrer')}>
                 Анкет бөглөх
               </button>
             </div>
@@ -123,4 +124,7 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default function WrapperHome() {
+  const navigate = useNavigate();
+  return <Home navigate={navigate} />;
+}

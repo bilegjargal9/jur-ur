@@ -2,7 +2,7 @@
 .home {
   position: relative;
   width: 1440px;
-  height: 6033px;
+  height: 5900px;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -98,7 +98,7 @@
   margin-top: 10px;
   border-radius: 20px;
   font-weight: 700;
-
+  transition: 0.5s ease;
 }
 .heroshop-home button:hover{
   background-color: #FFFFFF;
@@ -274,7 +274,9 @@
   top: 200px;
   border-radius: 20px;
   font-weight: 700;
-
+  transition: 0.5s ease;
+  border-radius: 20px;
+  font-weight: 700;
 }
 ._001A button:hover{
   background-color: white;
@@ -382,7 +384,9 @@
   transition: #6a4ee7 0.5s ease;
   border-radius: 20px;
   font-weight: 700;
-
+  transition: 0.5s ease;
+  border-radius: 20px;
+  font-weight: 700;
 }
 .info1 button:hover{
   background-color: white;
@@ -466,8 +470,7 @@
   margin-bottom: 50px;
   align-items: center;
   justify-content: center;
-
-
+  margin-top: -50px;
 }
 .itemA-home{
   display: flex;
@@ -593,6 +596,7 @@
   transition: #6a4ee7 0.5s ease;
   border-radius: 20px;
   font-weight: 700;
+  transition: 0.5s ease;
 
 }
 .zurag1-home button:hover{

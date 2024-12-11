@@ -83,7 +83,7 @@ class Contact extends React.Component{
                                     <h4>Төв Үйлдвэр</h4>
                                     <p>jurur.mn</p>
                                 </div>
-                            <button className="hrButton">Анкет бөглөх</button>
+                            <button className="hrButton" onClick={()=>{window.open('https://www.cognitoforms.com/HRJurUr/TovUildverJurUrOnlineAnket/', '_blank', 'noopener,noreferrer')}}>Анкет бөглөх</button>
                         </div>
                         <h6>Бусад салбар</h6>
                         <div className="hr-item-contact">
@@ -92,7 +92,7 @@ class Contact extends React.Component{
                                     <h4>Зангиа МН</h4>
                                     <p>zangia.mn/company/jururxxk</p>
                                 </div>
-                            <button className="hrButton">Ажлын зар харах</button>
+                            <button className="hrButton" onClick={()=>{window.open("https://www.zangia.mn/company/jururxxk")}}>Ажлын зар харах</button>
                         </div>
                         <div className="hr-item-contact">
                             <img src={images.worki} alt="logo-location"/>
@@ -100,7 +100,7 @@ class Contact extends React.Component{
                                     <h4>Worki</h4>
                                     <p>worki.mn/company/Jurur</p>
                                 </div>
-                            <button className="hrButton">Ажлын зар харах</button>
+                            <button className="hrButton" onClick={()=>{window.open("https://worki.mn/company/69694115701326?tab=0")}}>Ажлын зар харах</button>
                         </div>
                         <div className="hr-item-contact">
                             <img src={images.minijurur} alt="logo-location"/>
@@ -108,7 +108,7 @@ class Contact extends React.Component{
                                     <h4>Жүр үр HR</h4>
                                     <p>facebook.com/JURURHR</p>
                                 </div>
-                            <button className="hrButton">Ажлын зар харах</button>
+                            <button className="hrButton" onClick={()=>{window.open("https://www.facebook.com/JURURHR")}}>Ажлын зар харах</button>
                         </div>
 
                     </div>

@@ -7,9 +7,7 @@
 }
 
 .sub{
-  /* sub */
 
-/* Auto layout */
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -20,6 +18,8 @@ height: 560px;
 background-color: #1B3363;
 position: relative;
 margin-bottom: 40px;
+
+border-radius: 10px;
 }
 .overlay{
 position: absolute;
